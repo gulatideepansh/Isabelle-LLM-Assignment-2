@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+logs/*.jsonl
+server.log
+
+# Isabelle temp
+.isabelle/
+
+# VSCode
+.vscode/
+
+# Word / Office temporary and report files
+*.docm
+*.docx
+~$*
+~WRL*.tmp
+
+# Local runtime logs
+*.log
+
+# Assignment handout files
+3806ict-assignment2-2026.pdf
+3806ict-assignment2-marking-rubric-2026.pdf

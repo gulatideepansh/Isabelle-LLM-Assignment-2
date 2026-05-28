@@ -1,0 +1,17 @@
+Command:
+python baselines\sledge_only.py --file datasets\logic.txt --imports Main --sledge-timeout 8 --goal-timeout 25 --print-logs
+
+Environment:
+Windows, Python 3.11.15, Isabelle2025, qwen:7b available through Ollama.
+
+Result:
+Success: 5/5 (100.0%)
+Median time: 4.23s
+Average time: 4.30s
+
+Proof methods returned:
+(True ∧ P) ⟷ P -> by presburger
+(P ∧ True) ⟷ P -> by presburger
+(P ∨ False) ⟷ P -> by presburger
+(¬ ¬ P) ⟷ P -> by simp
+(P ⟶ Q) ⟷ (¬ P ∨ Q) -> by presburger

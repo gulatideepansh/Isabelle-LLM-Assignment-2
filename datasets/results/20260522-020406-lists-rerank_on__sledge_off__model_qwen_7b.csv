@@ -1,0 +1,19 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+rev (rev xs) = xs,True,1,4.19109845161438,qwen:7b,False,10,2
+xs @ [] = xs,True,1,2.061586618423462,qwen:7b,False,20,2
+[] @ xs = xs,True,1,2.0583417415618896,qwen:7b,False,30,2
+rev (xs @ ys) = rev ys @ rev xs,True,1,2.108447551727295,qwen:7b,False,40,2
+map id xs = xs,True,2,16.950007677078247,qwen:7b,False,68,3
+map f (xs @ ys) = map f xs @ map f ys,True,1,2.070085287094116,qwen:7b,False,78,2
+map f (rev xs) = rev (map f xs),False,1,31.76469087600708,qwen:7b,True,90,2
+length (xs @ ys) = length xs + length ys,True,1,2.2084808349609375,qwen:7b,False,100,2
+length (rev xs) = length xs,True,1,2.1042211055755615,qwen:7b,False,110,2
+take (length xs) (xs @ ys) = xs,True,1,2.0689857006073,qwen:7b,False,120,2
+drop (length xs) (xs @ ys) = ys,True,1,2.1481075286865234,qwen:7b,False,130,2
+take n xs @ drop n xs = xs,True,1,2.109391689300537,qwen:7b,False,140,2
+set (xs @ ys) = set xs ∪ set ys,True,1,2.102853298187256,qwen:7b,False,150,2
+x ∈ set xs ⟹ x ∈ set (xs @ ys),True,1,2.107128620147705,qwen:7b,False,160,2
+x ∈ set ys ⟹ x ∈ set (xs @ ys),True,1,2.1038002967834473,qwen:7b,False,170,2
+distinct xs ⟹ distinct (rev xs),True,1,2.111114263534546,qwen:7b,False,180,2
+filter p (xs @ ys) = filter p xs @ filter p ys,True,1,4.1987385749816895,qwen:7b,False,190,2
+map f (filter p xs) = filter (λx. p x) (map f xs),False,1,32.03795671463013,qwen:7b,True,203,2

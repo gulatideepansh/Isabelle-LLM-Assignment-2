@@ -1,0 +1,9 @@
+goal,success,depth,elapsed_s,model,timeout,use_calls,steps_len
+{x} ∪ A = insert x A,True,1,4.322315454483032,qwen:7b,False,10,2
+x ∈ insert y A ⟷ (x = y ∨ x ∈ A),True,1,4.854885101318359,qwen:7b,False,20,2
+A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C),True,1,6.3063719272613525,qwen:7b,False,32,2
+A ⊆ A ∪ B,True,1,4.760927200317383,qwen:7b,False,42,2
+A ∩ B ⊆ A,True,1,4.786799907684326,qwen:7b,False,52,2
+(A ⊆ B ∧ B ⊆ C) ⟹ A ⊆ C,True,1,8.862311363220215,qwen:7b,False,64,2
+(A ⊆ B ∧ B ⊆ A) ⟹ A = B,True,1,4.223622560501099,qwen:7b,False,75,2
+set (xs @ ys) = set xs ∪ set ys,True,1,4.544689655303955,qwen:7b,False,85,2

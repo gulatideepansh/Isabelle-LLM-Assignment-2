@@ -1,0 +1,6 @@
+goal,success,elapsed_s,mode,model,outline_chars,fills,failed_holes,had_sorry,verified_ok,proof_source
+(True ∧ P) ⟷ P,True,10.5053,auto,qwen:7b,36,1,0,False,True,direct_stepwise
+(P ∧ True) ⟷ P,True,11.3374,auto,qwen:7b,36,1,0,False,True,direct_stepwise
+(P ∨ False) ⟷ P,True,11.3103,auto,qwen:7b,37,1,0,False,True,direct_stepwise
+(¬ ¬ P) ⟷ P,True,13.3844,auto,qwen:7b,33,1,0,False,True,direct_stepwise
+(P ⟶ Q) ⟷ (¬ P ∨ Q),True,11.4481,auto,qwen:7b,35,1,0,False,True,direct_stepwise
