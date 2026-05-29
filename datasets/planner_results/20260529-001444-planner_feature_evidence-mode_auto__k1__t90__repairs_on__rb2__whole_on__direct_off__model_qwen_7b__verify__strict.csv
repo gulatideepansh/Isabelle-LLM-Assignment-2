@@ -1,0 +1,4 @@
+goal,success,elapsed_s,mode,model,outline_chars,fills,failed_holes,had_sorry,verified_ok,proof_source
+(True ∧ P) ⟷ P,True,105.6624,auto,qwen:7b,36,1,0,False,True,whole_stepwise_fallback
+(P ∨ False) ⟷ P,True,101.4841,auto,qwen:7b,37,1,0,False,True,whole_stepwise_fallback
+map f (xs @ ys) = map f xs @ map f ys,True,102.0155,auto,qwen:7b,53,1,0,False,True,whole_stepwise_fallback

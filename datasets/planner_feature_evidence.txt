@@ -1,0 +1,3 @@
+(True ∧ P) ⟷ P
+(P ∨ False) ⟷ P
+map f (xs @ ys) = map f xs @ map f ys
